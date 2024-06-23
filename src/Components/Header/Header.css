@@ -20,7 +20,7 @@
 .header div {
     width: 26px;
     aspect-ratio: 1;
-    transition: all 1s ease-in-out;
+    transition: all var(--delta) ease-in-out;
 }
 
 .App.light .header div {

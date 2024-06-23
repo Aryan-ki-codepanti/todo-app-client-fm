@@ -1,0 +1,47 @@
+.createTodoBox {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1.4em;
+    padding-block: 0.3em;
+    border-radius: 7px;
+
+    transition: all var(--delta) ease-in-out;
+}
+
+.todoStatus {
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.createTodoInput input:focus {
+    outline: none;
+}
+.createTodoInput input {
+    padding-block: 1em;
+    background: transparent;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    transition: all var(--delta) ease-in-out;
+}
+
+.App.light .createTodoBox {
+    background: var(--Very_Light_Gray);
+}
+
+.App.light .todoStatus {
+    border: 1px solid var(--Light_Grayish_Blue);
+}
+
+.App.dark .todoStatus {
+    border: 1px solid var(--Very_Dark_Grayish_Blue);
+}
+.App.dark .createTodoBox {
+    background: var(--Very_Dark_Desaturated_Blue);
+}
+.App.dark .createTodoInput input {
+    color: var(--Light_Grayish_Blue);
+}

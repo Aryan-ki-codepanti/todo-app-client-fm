@@ -10,6 +10,9 @@
 }
 
 :root {
+    /* theme switch time */
+    --delta: 1s;
+
     /* primary */
     --Bright_Blue: hsl(220, 98%, 61%);
     --Check_Background: linear-gradient hsl(192, 100%, 67%) to
@@ -31,7 +34,7 @@
     --Light_Grayish_Blue_hover: hsl(236, 33%, 92%); /*hover*/
     --Dark_Grayish_Blue: hsl(234, 11%, 52%);
     --Very_Dark_Grayish_Blue: hsl(233, 14%, 35%);
-    --Very_Dark_Grayish_Blue: hsl(237, 14%, 26%);
+    --Very_Dark_Grayish_Blue_2: hsl(237, 14%, 26%);
 }
 
 .App {
@@ -39,15 +42,17 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    transition: all 1s ease-in-out;
+    transition: all var(--delta) ease-in-out;
 }
 
 .App.light {
     background-image: url("/images/bg-desktop-light.jpg");
+    background-color: var(--Very_Light_Grayish_Blue);
 }
 
 .App.dark {
     background-image: url("/images/bg-desktop-dark.jpg");
+    background-color: var(--Very_Dark_Blue);
 }
 
 .container {
@@ -55,4 +60,8 @@
     margin: auto;
     padding: 4em 2em 3em;
     border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }

@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import ThemeContext from "../../Context/theme/ThemeContext";
 
 import "./Header.css";
-import Moon from "../../assets/icon-moon.svg";
-import Sun from "../../assets/icon-sun.svg";
 
 const Header = () => {
     const { theme, setTheme } = useContext(ThemeContext);
