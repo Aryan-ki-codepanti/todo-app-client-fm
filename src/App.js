@@ -1,13 +1,18 @@
+import { useContext } from "react";
 import "./App.css";
+import Header from "./Components/Header";
 import ThemeState from "./Context/theme/ThemeState";
+import ThemeContext from "./Context/theme/ThemeContext";
 
 function App() {
+    const { theme } = useContext(ThemeContext);
+
     return (
         <>
-            <div className="App">
-                <header className="App-header">
-                    <h1>Helllo World</h1>
-                </header>
+            <div className={`App ${theme}`}>
+                <div className="container">
+                    <Header />
+                </div>
             </div>
         </>
     );
