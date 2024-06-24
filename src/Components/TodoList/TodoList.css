@@ -34,8 +34,7 @@
     width: 15px;
     aspect-ratio: 1;
     border-radius: 50%;
-
-    transition: all var(--delta) ease-in-out;
+    transition: background-color var(--delta) ease-in-out;
 }
 
 .todoBox p {
@@ -76,4 +75,25 @@
 
 .App.dark .todoBox {
     border-bottom: 1px solid var(--Very_Dark_Grayish_Blue);
+}
+
+.todoBox.completed .cross {
+    display: none;
+}
+
+.todoBox.completed p {
+    text-decoration: line-through;
+}
+
+.todoBox.completed .todoStatus,
+.todoBox.completed .todo-check-inner {
+    background: linear-gradient(
+        150deg,
+        rgba(87, 221, 255, 1) 35%,
+        rgba(192, 88, 243, 1) 100%
+    );
+}
+
+.todoBox.completed .todo-check-inner {
+    background: url("/images/icon-check.svg") no-repeat center;
 }
