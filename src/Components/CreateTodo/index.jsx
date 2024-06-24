@@ -8,7 +8,7 @@ const CreateTodo = () => {
         task: ""
     };
 
-    const { setTodos } = useContext(TodoContext);
+    const { todos, setTodos } = useContext(TodoContext);
 
     const [todo, setTodo] = useState(defaultTodo);
 
@@ -17,6 +17,9 @@ const CreateTodo = () => {
         if (e.keyCode === 13) {
             setTodos(prev => [...prev, todo]);
             setTodo(prev => defaultTodo);
+
+            // update LocalStorage
+            localStorage.setItem("todos", JSON.stringify([...todos, todo]));
             console.log("Todo Added");
         }
     };
