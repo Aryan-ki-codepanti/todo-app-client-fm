@@ -15,8 +15,7 @@
 
     /* primary */
     --Bright_Blue: hsl(220, 98%, 61%);
-    --Check_Background: linear-gradient hsl(192, 100%, 67%) to
-        hsl(280, 87%, 65%);
+    --Check_Background: linear-gradient #57ddff to #c058f3;
 
     /* ### Light Theme */
 

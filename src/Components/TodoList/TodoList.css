@@ -1,0 +1,79 @@
+.todoListBox {
+    border-radius: 5px;
+    transition: all var(--delta) ease-in-out;
+}
+
+.todoBox {
+    padding-block: 1.3em;
+    background: transparent;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+}
+.todo-check {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.todo-check:hover {
+    background: linear-gradient(
+        150deg,
+        rgba(87, 221, 255, 1) 35%,
+        rgba(192, 88, 243, 1) 100%
+    );
+}
+
+.todo-check-inner {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    transition: all var(--delta) ease-in-out;
+}
+
+.todoBox p {
+    cursor: pointer;
+}
+
+.todoBox .cross {
+    margin-inline: auto 1.4em;
+    width: 20px;
+    aspect-ratio: 1;
+    background-image: url("/images/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: none;
+}
+
+.todoBox:hover .cross {
+    display: block;
+}
+
+.App.dark .todoBox p {
+    color: var(--Light_Grayish_Blue);
+}
+
+.App.light .todoListBox,
+.App.light .todo-check-inner {
+    background: var(--Very_Light_Gray);
+}
+.App.dark .todoListBox,
+.App.dark .todo-check-inner {
+    background: var(--Very_Dark_Desaturated_Blue);
+}
+
+.App.light .todoBox {
+    border-bottom: 1px solid var(--Light_Grayish_Blue);
+}
+
+.App.dark .todoBox {
+    border-bottom: 1px solid var(--Very_Dark_Grayish_Blue);
+}

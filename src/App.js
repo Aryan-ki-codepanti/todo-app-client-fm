@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Components/Header";
 import ThemeContext from "./Context/theme/ThemeContext";
 import CreateTodo from "./Components/CreateTodo";
+import TodoList from "./Components/TodoList";
 
 function App() {
     const { theme } = useContext(ThemeContext);
@@ -13,6 +14,7 @@ function App() {
                 <div className="container">
                     <Header />
                     <CreateTodo />
+                    <TodoList />
                 </div>
             </div>
         </>

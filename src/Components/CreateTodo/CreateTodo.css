@@ -1,18 +1,23 @@
-.createTodoBox {
+.createTodoBox,
+.todoBox {
     display: flex;
     align-items: center;
     gap: 1em;
     padding-left: 1.4em;
     padding-block: 0.3em;
-    border-radius: 5px;
 
     transition: all var(--delta) ease-in-out;
+}
+.createTodoBox {
+    border-radius: 5px;
 }
 
 .todoStatus {
     width: 20px;
     aspect-ratio: 1;
     border-radius: 50%;
+
+    transition: all var(--delta) ease-in-out;
 }
 
 .createTodoInput input:focus {
