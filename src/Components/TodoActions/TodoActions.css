@@ -22,9 +22,6 @@
 .todoFilter span {
     cursor: pointer;
 }
-.todoFilter span.current {
-    color: var(--Bright_Blue);
-}
 
 .todoClear button:disabled {
     cursor: none;
@@ -37,11 +34,20 @@
     font-weight: 600;
 }
 
-/* .App.light .todoActions {
+.App.light .todoFilter span {
     color: var(--Dark_Grayish_Blue);
 }
-*/
+.App.light .todoFilter span:hover {
+    color: var(--Very_Dark_Grayish_Blue);
+}
+.App.dark .todoFilter span:hover {
+    color: var(--Light_Grayish_Blue_hover);
+}
 
 .App.dark .todoClear button {
     color: var(--Dark_Grayish_Blue);
+}
+
+.todoFilter span.current {
+    color: var(--Bright_Blue) !important;
 }

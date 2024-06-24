@@ -49,11 +49,11 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    display: none;
+    visibility: hidden;
 }
 
 .todoBox:hover .cross {
-    display: block;
+    visibility: visible;
 }
 
 .App.dark .todoBox p {
