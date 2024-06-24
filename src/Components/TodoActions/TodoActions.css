@@ -1,0 +1,24 @@
+.todoActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.3em 1.575em;
+
+    font-weight: 600;
+}
+
+.todoFilter {
+    display: flex;
+    gap: 0.8em;
+}
+.todoFilter span {
+    cursor: pointer;
+}
+
+.todoClear button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+}
