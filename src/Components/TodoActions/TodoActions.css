@@ -3,22 +3,45 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 1.3em 1.575em;
+    color: var(--Dark_Grayish_Blue);
 
-    font-weight: 600;
+    padding: 1.3em 1.575em;
+    font-weight: 500;
+}
+
+.itemsLeft {
+    font-size: 0.9rem;
 }
 
 .todoFilter {
+    font-size: 1.1rem;
     display: flex;
     gap: 0.8em;
+    font-weight: 700;
 }
 .todoFilter span {
     cursor: pointer;
 }
+.todoFilter span.current {
+    color: var(--Bright_Blue);
+}
 
+.todoClear button:disabled {
+    cursor: none;
+}
 .todoClear button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* .App.light .todoActions {
+    color: var(--Dark_Grayish_Blue);
+}
+*/
+
+.App.dark .todoClear button {
+    color: var(--Dark_Grayish_Blue);
 }
