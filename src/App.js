@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import ThemeContext from "./Context/theme/ThemeContext";
 import CreateTodo from "./Components/CreateTodo";
 import TodoList from "./Components/TodoList";
+import TodoFilter from "./Components/TodoFilter";
 
 function App() {
     const { theme } = useContext(ThemeContext);
@@ -15,6 +16,10 @@ function App() {
                     <Header />
                     <CreateTodo />
                     <TodoList />
+
+                    <div className="mobile-filter">
+                        <TodoFilter />
+                    </div>
                 </div>
             </div>
         </>

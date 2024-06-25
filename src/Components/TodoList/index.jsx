@@ -1,12 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import TodoContext from "../../Context/todo/TodoContext";
+import FilterContext from "../../Context/filter/FilterContext";
 import "./TodoList.css";
 import TodoActions from "../TodoActions";
 
 const TodoList = () => {
     const { todos, setTodos } = useContext(TodoContext);
 
-    const [filter, setFilter] = useState("all");
+    const { filter } = useContext(FilterContext);
 
     const handleTodoDone = (e, idx) => {
         const newTodos = [];
@@ -115,7 +116,7 @@ const TodoList = () => {
                             </div>
                         ))}
             </div>
-            <TodoActions filter={filter} setFilter={setFilter} />
+            <TodoActions />
         </div>
     );
 };

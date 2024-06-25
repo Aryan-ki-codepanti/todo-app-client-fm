@@ -51,3 +51,9 @@
 .todoFilter span.current {
     color: var(--Bright_Blue) !important;
 }
+
+@media screen and (max-width: 500px) {
+    .todoActions .todoFilter {
+        display: none;
+    }
+}

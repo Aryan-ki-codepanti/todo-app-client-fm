@@ -1,0 +1,18 @@
+.mobile-filter .todoFilter {
+    padding-block: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Dark_Grayish_Blue);
+
+    transition: all var(--delta) ease-in-out;
+
+    border-radius: 5px;
+}
+
+.App.dark .mobile-filter .todoFilter {
+    background: var(--Very_Dark_Desaturated_Blue);
+}
+.App.light .mobile-filter .todoFilter {
+    background: var(--Very_Light_Gray);
+}

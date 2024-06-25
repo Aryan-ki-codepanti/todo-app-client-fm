@@ -64,3 +64,20 @@
     flex-direction: column;
     gap: 3em;
 }
+
+.mobile-filter {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-filter {
+        display: block;
+    }
+    .App.light {
+        background-image: url("/images/bg-mobile-light.jpg");
+    }
+
+    .App.dark {
+        background-image: url("/images/bg-mobile-dark.jpg");
+    }
+}
