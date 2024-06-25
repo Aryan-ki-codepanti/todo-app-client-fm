@@ -15,6 +15,8 @@ const CreateTodo = () => {
     const handleOnKeyDown = e => {
         //enter pressed
         if (e.keyCode === 13) {
+            if (!todo.task.trim()) return;
+
             setTodos(prev => [...prev, todo]);
             setTodo(prev => defaultTodo);
 
